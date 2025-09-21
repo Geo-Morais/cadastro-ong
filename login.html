@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cadastro de ONG</title>
+ <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="Icon" href="assets/icons/logo_cortada.png" type="Logo.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+<header>
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/icons/logo_cortada.png" alt="Logo ONGNET" width="50">
+                </a>
+            </div>
+            <ul class="ul-header">
+                <li>
+                    <a href="home.html" target="_self">
+                        <span>Home</span>
+                        <i class="fi fi-ss-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="active" target="_self">
+                        <span>Sou ONG</span>
+                        <i class="fi fi-sr-handshake"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html" target="_self">
+                        <span>Sobre nós</span>
+                        <i class="fi fi-sr-users-alt"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+  <main class="site-main">
+  
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">
+        Onde iniciativas sociais encontram apoio e visibilidade.
+      </h1>
+      <p><strong>#TransformaComOngNet</strong></p>
+    </section>
+
+    <section class="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Bem-vinda, ONG</h2>
+
+      <form id="cadastro-ong" action="#" method="post" novalidate>
+        
+       
+        <fieldset>
+          <legend>Informações da Instituição</legend>
+          
+          <label for="nome">Nome da instituição</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira o nome da instituição" 
+                 required aria-required="true">
+
+          <label for="representante">Representante</label>
+          <input type="text" id="representante" name="representante" placeholder="Insira o nome do representante" 
+                 required aria-required="true">
+
+          <label for="cnpj">CNPJ</label>
+          <input type="text" id="cnpj" name="cnpj" placeholder="Insira o CNPJ" 
+                 inputmode="numeric" required aria-required="true">
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço e Contato</legend>
+          
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="Insira o CEP" 
+                 inputmode="numeric" required aria-required="true">
+
+          <label for="numero">Número de residência</label>
+          <input type="text" id="numero" name="numero" placeholder="Insira o número" 
+                 required aria-required="true">
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" 
+                 required aria-required="true">
+        </fieldset>
+
+        <fieldset>
+          <legend>Login de Acesso</legend>
+          
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="email@exemplo.com" 
+                 required aria-required="true">
+
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" 
+                 minlength="8" required aria-required="true">
+
+          <label for="confirma">Confirme a senha</label>
+          <input type="password" id="confirma" name="confirma" placeholder="Repita a senha" 
+                 required aria-required="true">
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+<footer class="footer">
+    <p>Todos os direitos reservados &copy; 2025</p>
+  </footer>
+</body>
+</html>
