@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 32px auto;
   background: #fff;
   border-radius: 8px;
@@ -130,7 +130,7 @@ body {
 .form-section {
   flex: 1;
   background: #e6f6fc;
-  padding: 32px;
+  padding: 62px;
 }
 
 .form-section h2 {
@@ -195,3 +195,102 @@ input {
 }
 
 
+@media (max-width: 768px) {
+  .site-main {
+    flex-direction: column;
+    margin: 16px;
+  }
+
+  .intro {
+    flex: none;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 18px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-section h2 {
+    font-size: 18px;
+  }
+
+  .form-actions button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  header {
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .ul-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .ul-header li {
+    padding: 5px 0;
+  }
+
+  .site-nav ul {
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 16px;
+  }
+
+  .form-section h2 {
+    font-size: 16px;
+  }
+
+  .form-actions button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ul-header {
+    display: none;
+    flex-direction: column;
+    background-color: #e6f6fc;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .ul-header.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #004d40;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+}
